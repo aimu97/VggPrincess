@@ -1,2 +1,2 @@
 # VggPrincess
-Réseaux de neurone qui reconnaît les princesse Disney.
+Réseaux de neurone qui reconnait les princesse Disney.
