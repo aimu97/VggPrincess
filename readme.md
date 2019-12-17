@@ -12,9 +12,9 @@ Projet: Princess Disney
 
 ## Description projet
 
-Réseaux de neurone qui reconnaît les princesse Disney.
+Réseaux de neurone qui reconnaient les princesses Disney.
 
-L'objectif est de former un réseau neuronal convolutif pour reconnaître et classer chacun de ces Princesses
+L'objectif est de former un CNN pour reconnaître et classer chacun de ces Princesses
 
 Les princesses que mon réseau reconnait sont : 
 
@@ -31,7 +31,7 @@ Les princesses que mon réseau reconnait sont :
 	- Blanche-Neige (389 images)
 	- Tiana (380 images)
 
-La base de données comprend 4642 images diversifié ( figurines, jouet, dessins, images du film) en total.
+La base de données comprend 4642 images diversifiés ( figurines, jouet, dessins, images du film).
 
 
 ## Strucuture du projet
@@ -63,7 +63,7 @@ La base de données comprend 4642 images diversifié ( figurines, jouet, dessins
 ```
 -Dataset: contient les 12 classes, chaque classes est son propre sous-répertoire respectif pour facilité l'analyse des étiquettes de classe
 
--Test_exemple: contient des images où on utilise pour tester le Cnn
+-Test_exemple: contient des images où on utilise pour tester le CNN
 
 -Vggsmall : contient la classe de modele vggnet
 
@@ -77,14 +77,14 @@ La base de données comprend 4642 images diversifié ( figurines, jouet, dessins
 
 - classsify.py : script de test
 
--test epoch 50: fichier qui contient les resulat obtenu avec 50 epochs
+-test epoch 50: fichier qui contient les resulats obtenus avec 50 epochs
 
 -search_bing_api.py: api qui a permis de alimenter le dataset( clef microsoft : essaie de 7 jours gratuit) 
 
 ## Sources
 
 
- Etape 1 API pour le dataset:
+API pour le dataset:
  - Api microsoft, essaie 7 jours : 
  -https://docs.microsoft.com/en-us/azure/cognitive-services/bing-image-search/quickstarts/python
 
@@ -103,7 +103,7 @@ La base de données comprend 4642 images diversifié ( figurines, jouet, dessins
   - https://keras.io/layers/pooling/
   -https://keras.io/applications/#vgg16
 
- Model/Base (suivie etape par etape):
+ Model/Base (suivie étape par étape):
   - https://www.pyimagesearch.com/2017/12/11/image-classification-with-keras-and-deep-learning/
 
   -https://pmcg2k15.wordpress.com/category/pyimagesearch/
@@ -117,12 +117,12 @@ La base de données comprend 4642 images diversifié ( figurines, jouet, dessins
 
  ``` python3 train.py --dataset dataset --model princess.model --labelbin lb.pickle```
 
- Création du model de training. Pour 100 epcohs cela prend 2h30 - 3h reconnais toutes les princesses
+ Création du model de training. Pour 100 epcohs cela prend 2h30 - 3h reconnaitre toutes les princesses
 
- Pour 50 epochs cela prend 1h30-2h et ne reconnais pas toute les princesses tel que Aurora
+ Pour 50 epochs cela prend 1h30-2h et ne reconnais pas toutes les princesses ( Aurora par exemple)
 
 
 
  ```python classify.py --model princess.model --labelbin lb.pickle \ --image test_exemple/moana.png```
 
- un exemple pour tester si le reseau reconnais la princesse et si c'est la bonne étiquette
+ un exemple pour tester si le réseau reconnais la princesse et si c'est la bonne étiquette( si c'est bien moana).
