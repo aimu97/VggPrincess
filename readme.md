@@ -35,7 +35,7 @@ La base de données comprend 4642 images diversifié ( figurines, jouet, dessins
 
 
 ## Strucuture du projet
-
+```
 |-------- Dataset 
 			|----ariel [799 entrées]
 			|----aurora [334 entrées]
@@ -60,7 +60,7 @@ La base de données comprend 4642 images diversifié ( figurines, jouet, dessins
 |-------- test epoch 50
 |-------- search_bing_api.py
 
-
+```
 -Dataset: contient les 12 classes, chaque classes est son propre sous-répertoire respectif pour facilité l'analyse des étiquettes de classe
 
 -Test_exemple: contient des images où on utilise pour tester le Cnn
